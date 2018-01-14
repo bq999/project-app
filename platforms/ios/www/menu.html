@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- 
+Name: Bilal Qaiser
+Student ID: c0692411
+-->
+
+
+<style>
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+  overflow: scroll;
+}
+
+#overlay p{
+  color: black;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+table td{
+
+  font-size: 15px;
+}
+</style>
+
+
+<title>Arabic Desserts</title>
+
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="icon" href="img/logo.png">
+
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+   <h1 id="welcome">Welcome Lazeez</h1>
+ </div>
+ <p>Arabic Desserts</p>
+</header>
+
+
+
+<!-- Navigation cart-->
+
+<div class="navbar">
+  <a id="subtotal">$0</a>
+  <a id="tax">Tax (5%): $3.60</a>
+  <a id="shipping">Shipping: $5.00</a>
+  <a id="total">$0</a>
+  <a class="checkout" onclick="on()">Checkout</a></td>
+</div>
+
+
+<div id="overlay" onclick="off()">
+
+  <!-- Table of cart -->
+
+  <table id="myTable">
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Image</th> 
+      <th>Quantity</th>
+      <th>Total</th>
+    </tr>
+    <tr>
+    </table>
+
+    <br>
+    <br>
+    <table class="myTable">
+      <tr>
+        <th>Total</th>
+        <th>Tax (5%)</th>
+        <th>Shipping</th> 
+        <th>Grand Total</th>
+      </tr>
+      <tr>
+
+        <th><p id="subtotal1">$0</p></th>
+        <th><p id="tax">$3.60</p></th>
+        <th><p id="shipping">$5.00</p></th>
+        <th><p id="total1">$0</p></th>
+
+      </tr>
+    </table>
+
+
+    <a href="#" target="_blank"><button class = "paybtn" >Payment</button></a>
+    <a href="https://www.paypal.com/ca/home" target="_blank"><button class = "paybtn" >Paypal</button></a>
+
+  </div>
+</div>
+
+
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+
+
+<!--Navigation--> 
+<div class="topnav" id="myTopnav">
+
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="account.html">Account</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="news.html">News</a>
+  <a href="calendar.html">Appointment</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<h1 id="welcome">Sweet</h1> 
+<div class="parallax"> </div>
+
+
+<!-- Sweet Menu -->
+
+<figure class="snip1418"><img src="img/basbousa.jpg" alt="Basbousa"/>
+  <figcaption>
+    <h3>Basbousa</h3>
+  </div>
+  <div class="price">
+    $10.99
+  </div>
+  <p>Quantity: <input id="q1" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+  <h4 id="payment">Total: $0</h4>
+  <button onclick="order1()">Add</button>
+</figcaption>
+</figure>
+
+
+<figure class="snip1418"><img src="img/katayef.jpg" alt="Katayef"/>
+  <figcaption>
+    <h3>Katayef</h3>
+    <div class="price">$20.99
+    </div>
+    <p>Quantity: <input id="q2" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <h4 id="payment2">$0</h4>
+    <button onclick="order2()">Add</button>
+  </figcaption>
+</figure>
+
+
+<figure class="snip1418"><img src="img/kunafa.jpg" alt="Kunfa"/>
+  <figcaption>
+    <h3>Kunafa</h3>
+    <div class="price">$15.99
+    </div>
+    <p>Quantity: <input id="q3" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <h4 id="payment3">$0</h4>
+    <button onclick="order3()">Add</button>
+  </figcaption>
+</figure>
+
+
+<figure class="snip1418"><img src="img/maakroun.jpg" alt="Maakroun"/>
+  <figcaption>
+    <h3>Maakroun</h3>
+    <div class="price">$10.99
+    </div>
+    <p>Quantity: <input id="q4" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <h4 id="payment4">$0</h4>
+    <button onclick="order4()">Add</button>
+  </figcaption>
+</figure>
+
+
+<figure class="snip1418"><img src="img/muhallabia.jpg" alt="Muhallabia"/>
+  <figcaption>
+    <h3>Muhallabia</h3>
+    <div class="price">$14.99
+    </div>
+    <p>Quantity: <input id="q5" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <h4 id="payment5">$0</h4>
+    <button onclick="order5()">Add</button>
+  </figcaption>
+</figure>
+
+
+<figure class="snip1418"><img src="img/othmaliye.jpg" alt="Othmaliye"/>
+  <figcaption>
+    <h3>Othmaliye</h3>
+    <div class="price">$8.99
+    </div>
+    <p>Quantity: <input id="q6" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <h4 id="payment6">$0</h4>
+    <button onclick="order6()">Add</button>
+  </figcaption>
+</figure>
+
+
+<figure class="snip1418"><img src="img/ranqana.jpg" alt="Ranqana"/>
+  <figcaption>
+    <h3>Rangana</h3>
+    <div class="price">$9.99
+    </div>
+    <p>Quantity: <input id="q7" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <h4 id="payment7">$0</h4>
+    <button onclick="order7()">Add</button>
+  </figcaption>
+</figure>
+
+
+<figure class="snip1418"><img src="img/zainab.jpg" alt="Zainab"/>
+  <figcaption>
+    <h3>Zainab</h3>
+    <div class="price">$5.99
+    </div>
+    <p>Quantity: <input id="q8" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <h4 id="payment8">$0</h4>
+    <button onclick="order8()">Add</button>
+  </figcaption>
+</figure>
+
+<table>
+</table>
+
+<h1 id="welcome">Drink</h1> 
+<div class="parallax2"> </div>
+
+
+<!-- Drink Menu -->
+
+<figure class="snip1418"><img src="img/karak.jpg" alt="Karak"/>
+  <figcaption>
+    <h3>Karak</h3>
+    <div class="price">$3.99
+    </div>
+    <p>Quantity: <input id="q9" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <h4 id="payment9">$0</h4>
+    <button onclick="order9()">Add</button>
+  </figcaption>
+</figure>
+
+
+<figure class="snip1418"><img src="img/coffee.jpg" alt="Coffee"/>
+  <figcaption>
+    <h3>Coffee</h3>
+    <div class="price">$2.99
+    </div>
+    <p>Quantity: <input id="q10" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <h4 id="payment10">$0</h4>
+    <button onclick="order10()">Add</button>
+  </figcaption>
+</figure>
+
+
+<figure class="snip1418"><img src="img/qahwa.jpg" alt="Qahwa"/>
+  <figcaption>
+    <h3>Qahwa</h3>
+    <div class="price">$1.99
+    </div>
+    <p>Quantity: <input id="q11" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <h4 id="payment11">$0</h4>
+    <button onclick="order11()">Add</button>
+  </figcaption>
+</figure>
+
+<table>
+</table>
+
+
+<!-- Total cart -->
+
+  <div class="totals">
+    <br>
+    <p><input  type="hidden" id="total1" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+    <p><input  type="hidden" id="total2" type="number" min="0" max="72" value="0" step="1" onchange="computeLoan()"></p>
+  </div>
+
+
+<!-- Footer -->
+
+  <p class="social">
+    <a href="https://www.facebook.com" target="_blank"><img class="socials" src="img/Social-Facebook-34.png"></a>
+    <a href="https://www.twitter.com" target="_blank"><img class="socials" src="img/twitter.png"></a>
+    <a href="https://www.google.com" target="_blank"><img class="socials" src="img/Social-Google-34.png"></a>
+    <a href="https://www.instagram.com" target="_blank"><img class="socials" src="img/instagram.png"></a>
+    <a href="https://www.youtube.com" target="_blank"><img class="socials" src="img/youtube.png"></a>
+  </p>
+
+  <footer>
+    <div class="row">
+      <div class="twelve columns">
+        <p> Bilal Qaiser - &copy; 2017 </p>
+      </div>
+    </div>
+  </footer>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <script src= "index.js" type="text/javascript"></script>
+  <script src= "slide.js" type="text/javascript"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+	xmlns:gap="http://phonegap.com/ns/1.0" 
+	id="com.bilalqaiser.project" 
+	version="1.0.0">
+
+	<name>
+		Bilal Qaiser
+	</name>
+
+<description>
+Lazeez mean "Arabic delicious dessert" in Arabic. Lazeez bakery offers a thoughtful and delicious touch to your year round gift giving. 
+</description>
+
+<platform name="android"/>
+<preference name="orientation" value="portrait"/>
+<preference name="fullscreen" value="true"/>
+<preference name="permission" value="none"/>
+<icon src="icon.jpg"/>
+<plugin name="cordova-plugin-splashscreen"/>
+<splash src="splash.jpg"/>
+<preference name="SplashScreenDelay" value="5600" />
+
+<author href="https://www.linkedin.com/in/bilal-qaiser-26539b5a/" email="noname.999@hotmail.com">
+	Bilal Qaiser
+</author>
+
+</widget>
+
+
